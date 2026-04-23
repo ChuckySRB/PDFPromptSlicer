@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pdf-prompt-slicer"
-version = "0.1.0"
+version = "0.1.1"
 description = "Slice specific pages from a PDF and copy their text to the clipboard — for building shorter LLM contexts."
 readme = "README.md"
 requires-python = ">=3.10"

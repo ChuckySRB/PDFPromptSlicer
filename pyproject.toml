@@ -9,6 +9,8 @@ description = "Slice specific pages from a PDF and copy their text to the clipbo
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "ChuckySRB" }]
+license = "MIT"
+license-files = ["LICENSE"]
 keywords = ["pdf", "slicer", "llm", "clipboard", "prompt", "cli"]
 classifiers = [
     "Environment :: Console",

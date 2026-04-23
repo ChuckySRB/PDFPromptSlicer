@@ -22,10 +22,12 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 Then install this tool in one line:
 
 ```bash
-uv tool install git+https://github.com/ChuckySRB/PDFPromptSlicer
+uv tool install pdf-prompt-slicer
 ```
 
 That puts a `pdfslice` command on your PATH. You can now run it from anywhere.
+
+> Prefer pip? `pipx install pdf-prompt-slicer` works the same way.
 
 To upgrade later: `uv tool upgrade pdf-prompt-slicer`
 To uninstall: `uv tool uninstall pdf-prompt-slicer`

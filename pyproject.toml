@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pdf-prompt-slicer"
+version = "0.1.0"
+description = "Slice specific pages from a PDF and copy their text to the clipboard — for building shorter LLM contexts."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "ChuckySRB" }]
+keywords = ["pdf", "slicer", "llm", "clipboard", "prompt", "cli"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "pypdf>=4.0",
+    "pyperclip>=1.8",
+]
+
+[project.scripts]
+pdfslice = "pdf_prompt_slicer.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ChuckySRB/PDFPromptSlicer"
+Repository = "https://github.com/ChuckySRB/PDFPromptSlicer"
+Issues = "https://github.com/ChuckySRB/PDFPromptSlicer/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pdf_prompt_slicer"]
